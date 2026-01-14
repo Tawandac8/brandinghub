@@ -9,61 +9,75 @@
 @endsection
 
 @section('content')
-    Hero Section
-    <section
-        class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-cyan-900">
-        {{-- Background Image with Overlay --}}
-        <div class="absolute inset-0 z-0">
-            <img src="{{ asset('images/hero.png') }}" alt="Premium Printing Services"
-                class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-600/20"></div>
+    {{-- Modern Hero Section --}}
+    <section class="relative min-h-screen flex items-center overflow-hidden" style="background: var(--color-bg-gradient);">
+        {{-- Decorative background blobs --}}
+        <div
+            class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[800px] h-[800px] bg-violet-200/30 rounded-full blur-3xl -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[600px] h-[600px] bg-pink-200/30 rounded-full blur-3xl -z-10">
         </div>
 
-        {{-- Hero Content --}}
-        <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
-            <h1 class="hero-title text-white mb-6 animate-fade-in-up">
-                Premium Printing &<br>Branding Solutions
-            </h1>
-            <p class="hero-subtitle text-gray-200 mb-10 animate-fade-in-up animation-delay-200">
-                We bring your brand to life – professionally, fast, and affordably.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
-                <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote"
-                    class="btn-primary btn-lg">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-                    </svg>
-                    Get a Quote on WhatsApp
-                </a>
-                <a href="{{ route('gallery') }}" class="btn-secondary btn-lg">
-                    View Our Work
-                </a>
-            </div>
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                {{-- Left Content --}}
+                <div class="w-full lg:w-1/2 reveal-staggered">
+                    <span class="inline-block text-gray-600 font-bold uppercase tracking-wider mb-4">
+                       Trusted Branding & Print Service
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-8">
+                        Build And Grow<br>
+                        <span class="relative">
+                            Your Business
+                        </span>
+                        with Us
+                    </h1>
 
-            {{-- Trust Indicators --}}
-            <div class="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-cyan-400 mb-2">10+</div>
-                    <div class="text-gray-300">Years Experience</div>
+
+                    <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote"
+                        class="btn-primary w-fit">
+                        Talk To Us
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-cyan-400 mb-2">5000+</div>
-                    <div class="text-gray-300">Projects Completed</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-cyan-400 mb-2">98%</div>
-                    <div class="text-gray-300">Client Satisfaction</div>
+
+                {{-- Right Capsule Cluster --}}
+                <div class="w-full lg:w-1/2 relative min-h-[600px] flex items-center justify-center">
+                    {{-- Capsule 1: Top Center (Sublimation Printing) --}}
+                    <img src="{{ asset('images/hero-composite.png') }}" class="w-full h-full object-cover opacity-90"
+                        alt="Hero Image">
                 </div>
             </div>
         </div>
+    </section>
 
-        {{-- Scroll Indicator --}}
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
+    {{-- Trust Indicators --}}
+    <div class="grid grid-cols-3 gap-8 mt-20 max-w-3xl mx-auto">
+        <div class="text-center">
+            <div class="text-4xl font-bold text-red-400 mb-2">9+</div>
+            <div class="text-gray-300">Years Experience</div>
         </div>
+        <div class="text-center">
+            <div class="text-4xl font-bold text-red-400 mb-2">5000+</div>
+            <div class="text-gray-300">Projects Completed</div>
+        </div>
+        <div class="text-center">
+            <div class="text-4xl font-bold text-red-400 mb-2">98%</div>
+            <div class="text-gray-300">Client Satisfaction</div>
+        </div>
+    </div>
+    </div>
+
+    {{-- Scroll Indicator --}}
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
     </section>
 
     {{-- Services Preview Section --}}
@@ -81,9 +95,9 @@
                         <img src="{{ asset('images/service-business-cards.png') }}" alt="Business Cards"
                             class="service-image">
                     </div>
-                    <h3 class="service-title">Business Cards</h3>
-                    <p class="service-description">Premium quality business cards that make a lasting impression</p>
-                    <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Business%20Cards"
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-description">Creative design solutions for bespoke campaigns</p>
+                    <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Graphic%20Design"
                         class="service-link">
                         Order via WhatsApp →
                     </a>
@@ -92,11 +106,12 @@
                 {{-- Banners & Signage --}}
                 <div class="service-card group">
                     <div class="service-image-wrapper">
-                        <img src="{{ asset('images/service-banners.png') }}" alt="Banners & Signage" class="service-image">
+                        <img src="{{ asset('images/service-banners.png') }}" alt="Banners & Signage"
+                            class="service-image">
                     </div>
                     <h3 class="service-title">Banners & Signage</h3>
                     <p class="service-description">Eye-catching banners and signage for maximum visibility</p>
-                    <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Banners%20%26%20Signage"
+                    <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Banners%20%26%20Signage"
                         class="service-link">
                         Order via WhatsApp →
                     </a>
@@ -105,18 +120,12 @@
                 {{-- T-Shirt Printing --}}
                 <div class="service-card group">
                     <div class="service-image-wrapper">
-                        <div
-                            class="w-full h-48 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-lg flex items-center justify-center">
-                            <svg class="w-24 h-24 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                        </div>
+                        <img src="{{ asset('images/service-apparel.jpg') }}" alt="Apparel Printing"
+                            class="service-image">
                     </div>
-                    <h3 class="service-title">T-Shirt & Apparel</h3>
+                    <h3 class="service-title">Apparel Printing</h3>
                     <p class="service-description">Custom apparel printing with vibrant, long-lasting designs</p>
-                    <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20T-Shirt%20Printing"
+                    <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Apparel%20Printing"
                         class="service-link">
                         Order via WhatsApp →
                     </a>
@@ -130,7 +139,7 @@
                     </div>
                     <h3 class="service-title">Corporate Branding</h3>
                     <p class="service-description">Complete branding solutions for your business identity</p>
-                    <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Corporate%20Branding"
+                    <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote%20for%20Corporate%20Branding"
                         class="service-link">
                         Order via WhatsApp →
                     </a>
@@ -153,7 +162,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="feature-card">
-                    <div class="feature-icon bg-cyan-100 text-cyan-600">
+                    <div class="feature-icon bg-red-100 text-red-600">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -164,7 +173,7 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon bg-blue-100 text-blue-600">
+                    <div class="feature-icon bg-rose-100 text-rose-600">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -209,7 +218,7 @@
                 <p class="section-subtitle">Don't just take our word for it</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {{-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="testimonial-card">
                     <div class="flex items-center mb-4">
                         @for ($i = 0; $i < 5; $i++)
@@ -263,7 +272,7 @@
                         <p class="text-sm text-gray-600">Founder, Bloom Boutique</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -352,14 +361,14 @@
     </section>
 
     {{-- CTA Section --}}
-    <section class="py-20 bg-gradient-to-br from-cyan-600 to-blue-700 text-white">
+    <section class="py-20 bg-gradient-to-br from-red-600 to-rose-700 text-white">
         <div class="container mx-auto px-4 lg:px-8 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Bring Your Brand to Life?</h2>
-            <p class="text-xl text-cyan-100 mb-10 max-w-2xl mx-auto">
+            <p class="text-xl text-red-100 mb-10 max-w-2xl mx-auto">
                 Get in touch today and let's create something amazing together!
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20to%20get%20started"
+                <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20to%20get%20started"
                     class="btn-white btn-lg">
                     Chat on WhatsApp
                 </a>

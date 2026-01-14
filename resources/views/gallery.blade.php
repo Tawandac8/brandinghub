@@ -93,7 +93,7 @@
     </div>
 
     {{-- CTA Section --}}
-    <section class="py-20 bg-gradient-to-br from-cyan-600 to-blue-700 text-white">
+    <section class="py-20 bg-gradient-to-br from-red-600 to-rose-700 text-white">
         <div class="container mx-auto px-4 lg:px-8 text-center">
             <h2 class="text-4xl font-bold mb-6">Like What You See?</h2>
             <p class="text-xl text-cyan-100 mb-10 max-w-2xl mx-auto">

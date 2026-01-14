@@ -33,7 +33,7 @@ class ContactController extends Controller
         // Send email notification (configure your mail settings in .env)
         try {
             Mail::send('emails.contact', $data, function($message) use ($data) {
-                $message->to('info@brandinghub.com') // Change to your email
+                $message->to('info@brandinghub.co.zw') // Change to your email
                         ->subject('New Contact Form Submission: ' . ($data['subject'] ?? 'General Inquiry'))
                         ->replyTo($data['email'], $data['name']);
             });

@@ -5,10 +5,10 @@
             {{-- Logo --}}
             <a href="{{ route('home') }}" class="flex items-center space-x-3">
                 <div
-                    class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <span class="text-white font-bold text-xl">BH</span>
+                    class="w-10 h-10 rounded-lg flex items-center justify-center">
+                    <img src="{{ asset('images/bh-logo.png') }}" alt="Logo" class="w-full h-full object-contain">
                 </div>
-                <span class="text-2xl font-bold text-gray-900">Branding<span class="text-cyan-500">Hub</span></span>
+                <span class="text-2xl font-bold text-gray-900">Branding<span style="color: #F31203">Hub</span></span>
             </a>
 
             {{-- Desktop Navigation --}}
@@ -45,7 +45,7 @@
                     class="nav-link-mobile {{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a>
                 <a href="{{ route('contact') }}"
                     class="nav-link-mobile {{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a>
-                <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote"
+                <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20a%20quote"
                     class="btn-primary text-center">
                     Get a Quote
                 </a>

@@ -57,7 +57,7 @@
                             <button type="submit" class="btn-primary flex-1">
                                 Send Message
                             </button>
-                            <a href="https://wa.me/1234567890?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20to%20get%20in%20touch"
+                            <a href="https://wa.me/+263777754077?text=Hi%20Branding%20Hub%2C%20I%27d%20like%20to%20get%20in%20touch"
                                 class="btn-secondary flex-1 text-center">
                                 Chat on WhatsApp
                             </a>
@@ -80,24 +80,8 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-gray-900 mb-1">WhatsApp</h3>
-                                <p class="text-gray-600">+1 (234) 567-890</p>
+                                <p class="text-gray-600">+263 777 754 077</p>
                                 <p class="text-sm text-gray-500">Typically replies within minutes</p>
-                            </div>
-                        </div>
-
-                        {{-- Phone --}}
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
-                                <p class="text-gray-600">+1 (234) 567-890</p>
-                                <p class="text-sm text-gray-500">Mon-Fri, 9am-6pm</p>
                             </div>
                         </div>
 
@@ -112,7 +96,7 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-                                <p class="text-gray-600">info@brandinghub.com</p>
+                                <p class="text-gray-600">info@brandinghub.co.zw</p>
                                 <p class="text-sm text-gray-500">We'll respond within 24 hours</p>
                             </div>
                         </div>
@@ -132,7 +116,7 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
-                                <p class="text-gray-600">123 Business Street<br>City, State 12345</p>
+                                <p class="text-gray-600">Suite 101, 1<sup>st</sup> Floor,<br>Masiye Business Suites,<br>CNR 9<sup>th</sup> Ave/Fort Street,<br>Bulawayo</p>
                             </div>
                         </div>
                     </div>
@@ -143,11 +127,11 @@
                         <div class="space-y-2 text-sm">
                             <div class="flex justify-between">
                                 <span class="text-gray-600">Monday - Friday</span>
-                                <span class="font-medium text-gray-900">9:00 AM - 6:00 PM</span>
+                                <span class="font-medium text-gray-900">8:00 AM - 6:00 PM</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-gray-600">Saturday</span>
-                                <span class="font-medium text-gray-900">10:00 AM - 4:00 PM</span>
+                                <span class="font-medium text-gray-900">8:00 AM - 12:00 PM</span>
                             </div>
                             <div class="flex justify-between">
                                 <span class="text-gray-600">Sunday</span>
@@ -166,7 +150,7 @@
             <h2 class="text-3xl font-bold mb-8 text-center">Find Us</h2>
             <div class="rounded-xl overflow-hidden shadow-lg h-96">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841!2d-73.98731!3d40.74844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTQuMyJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=branding%20hub&t=&z=14&ie=UTF8&iwloc=B&output=embed"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>

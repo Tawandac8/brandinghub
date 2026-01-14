@@ -59,6 +59,15 @@ function closeQuoteModal() {
 
 // Quote Form Submission
 document.addEventListener("DOMContentLoaded", function () {
+    const quoteModal = document.getElementById("quote-modal");
+    if (quoteModal) {
+        quoteModal.addEventListener("click", function (e) {
+            if (e.target === quoteModal) {
+                closeQuoteModal();
+            }
+        });
+    }
+
     const quoteForm = document.getElementById("quote-form");
 
     if (quoteForm) {
@@ -131,6 +140,18 @@ function closeExitPopup() {
         popup.classList.add("hidden");
     }
 }
+
+// Close Exit Popup on background click
+document.addEventListener("DOMContentLoaded", function () {
+    const exitPopup = document.getElementById("exit-intent-popup");
+    if (exitPopup) {
+        exitPopup.addEventListener("click", function (e) {
+            if (e.target === exitPopup) {
+                closeExitPopup();
+            }
+        });
+    }
+});
 
 // Gallery Filtering
 function filterGallery(category) {
