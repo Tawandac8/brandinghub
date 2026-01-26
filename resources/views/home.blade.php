@@ -20,10 +20,10 @@
         </div>
 
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex flex-col lg:flex-row items-center gap-16 hero-content">
                 {{-- Left Content --}}
                 <div class="w-full lg:w-1/2 reveal-staggered">
-                    <span class="inline-block text-gray-600 font-bold uppercase tracking-wider mb-4">
+                    <span class="inline-block text-gray-600 font-bold uppercase tracking-wider mb-4 trust-text">
                        Trusted Branding & Print Service
                     </span>
                     <h1 class="text-5xl lg:text-7xl font-black text-gray-900 leading-tight mb-8">
@@ -378,4 +378,25 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('styles')
+    <style>
+       /* Mobile */
+       @media (max-width: 768px) {
+           .hero-content {
+               text-align: center;
+           }
+
+           .hero-content h1{
+            font-size: 2rem;
+           }
+
+           .trust-text{
+            font-size: 0.8rem;
+           }
+
+           .hero-content img{}
+       }
+    </style>
 @endsection
