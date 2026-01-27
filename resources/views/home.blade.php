@@ -46,7 +46,7 @@
                 </div>
 
                 {{-- Right Capsule Cluster --}}
-                <div class="w-full lg:w-1/2 relative min-h-[600px] flex items-center justify-center">
+                <div class="w-full lg:w-1/2 relative min-h-[600px] flex items-center justify-center hero-image">
                     {{-- Capsule 1: Top Center (Sublimation Printing) --}}
                     <img src="{{ asset('images/hero-composite.png') }}" class="w-full h-full object-cover opacity-90"
                         alt="Hero Image">
@@ -396,7 +396,9 @@
             font-size: 0.8rem;
            }
 
-           .hero-content img{}
+           .hero-image{
+            min-height: auto !important ;
+           }
        }
     </style>
 @endsection
